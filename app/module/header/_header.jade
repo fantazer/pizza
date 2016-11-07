@@ -1,0 +1,41 @@
+mixin header()
+	//block header
+	.header-wraper
+		.main-cont
+			.header
+				.header__logo
+					img(src="img/logo.png", alt="")
+				.header__slogan Доставка пиццы Набережные Челны 
+				.header__contact
+					.header__contact-text звонок бесплатный
+					.header__contact-numb 8 (800) 100-7-500
+				.social
+					a(href="#").social__el
+						i.icon.icon-youtube-alt
+					a(href="#").social__el
+						i.icon.icon-main
+					a(href="#").social__el
+						i.icon.icon-facebook
+					a(href="#").social__el
+						i.icon.icon-instagrem
+				.header__basket-wrap
+					.header__cost 1200
+						span.rub c
+					.header__basket Корзина
+		.nav-wraper
+			.main-cont
+				.nav
+					.nav__town 
+						.nav__town-wrap
+							.nav__town-text Набережные Челны
+							.triangle-bottom
+					.nav__menu
+						//for active el add class .nav__menu-el--active 
+						- var arr =['О нас','Рестораны','Карьера','Наша культура','Обучение','Голос рнр'];
+						- each val in arr 
+							.nav__menu-el 
+								a(href="#") #{val}
+					.nav__menu-enter 
+						span Вход/Регистрация
+
+	//block header end1

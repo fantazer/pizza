@@ -1,0 +1,18 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
++header()
+.section-wraper
+	+slider()
+	.main-cont
+		.section-info
+			.section-toolbar
+				+toolbar()
+			.section-content
+				+items()
++footer()
+include ./block_html/_script.jade
+
+
+
+

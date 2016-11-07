@@ -1,0 +1,43 @@
+//! block items
+.items-wraper
+	flex(between)
+	fw()
+.items-el
+	+below(1200px)
+		width 30%
+	width 23%
+	margin-bottom 50px
+	min-width 170px
+	position relative
+//.items-info 
+.items-new
+	position absolute
+	top 0
+	right 0
+	padding 0px 10px
+	background green
+	display inline
+	text-align center 
+	color white
+.items-title
+	font-size 22px
+	font-weight 700 
+	margin-bottom 15px
+.items-text
+	font-size 18px
+	margin-bottom 20px
+.items-get
+	flex(between)
+
+.items-cost
+	font-family Core Mellow Compressed
+	font-size 25px
+	.rub
+		font-size 14px
+.items-basket
+	@extend .btn--dark
+	font-size 24px
+	text-transform inherit
+
+//!block items end
+

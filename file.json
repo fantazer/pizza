@@ -1,0 +1,16 @@
+{
+	"block":{
+		"header":"header",
+		"slider":"slider",
+		"toolbar":"toolbar",
+		"items":"items",
+		"footer":"footer"
+		
+	},
+	"page":{
+		"index":"index",
+		"order":"order",
+		"cabinet":"cabinet",
+		"status":"status"
+	}
+}
