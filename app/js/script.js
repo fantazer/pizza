@@ -44,7 +44,88 @@ $(document).ready(function(){
 	}
 	hideToggle('.filter__toggle','.filter__sub');
 
+	//init scrollbar
+	$(".basket-cond__wrap").mCustomScrollbar({
+		setLeft: 0,
+		autoDraggerLength: false
+	});
 
+	$(".order-list__wraper").mCustomScrollbar({
+		setLeft: 0,
+		autoDraggerLength: false
+	});
+
+
+
+
+	//toggle basket
+	var hideToggleBasket = function(targetClick,toggleEl) {
+			$(targetClick).click(function(event){
+					event.stopPropagation();
+					$(toggleEl).slideToggle("fast");
+			});
+			$(toggleEl).on("click", function (event) {
+				event.stopPropagation();
+			});
+			$(document).on("click", function () {
+					$(toggleEl).hide();
+			});
+		}
+
+	hideToggleBasket('.header__basket','.basket-cond');
+
+	$('.basket-cond__close').click(function(){
+			$('.basket-cond').hide();
+	})
+
+	//modal
+	$('.header__slogan').click(function(){
+			$('.modal-item').bPopup({
+				closeClass:'modal-close',
+					position:['auto','auto'], // position center
+					follow: [true,false],
+			}); 
+	})
+
+	$('.header__contact-numb').click(function(){
+			$('.modal-city').bPopup({
+				closeClass:'modal-close',
+					position:['auto','auto'], // position center
+					follow: [true,false],
+			}); 
+	})
+
+	$('.header__logo').click(function(){
+			$('.modal-auth').bPopup({
+				closeClass:'modal-close',
+					position:['auto','auto'], // position center
+					follow: [true,false],
+			}); 
+	})
+
+	//Encrement
+	$('.minus').click(function () {
+	        var $input = $(this).parent().find('input');
+	        var count = parseInt($input.val()) - 1;
+	        count = count < 1 ? 0 : count;
+	        $input.val(count);
+	        $input.change();
+	        return false;
+
+	    });
+
+	$('.plus').click(function () {
+	    var $input = $(this).parent().find('input');
+	    $input.val(parseInt($input.val()) + 1);
+	    $input.change();
+	    return false;
+
+	});
+
+	//delete el in basket
+	$('.order-list-del__el').click(function(){
+		$(this).closest(".order-list--el").remove();
+	})
 	/* ###### init RangeSLider  ######*/
 	/* ###### bower i --save-dev nouislider  ######*/
 	/* ###### https://gist.github.com/fantazer/2bdc4e6a63708e143718ffa7c32eae17  ######*/

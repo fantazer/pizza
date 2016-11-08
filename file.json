@@ -4,8 +4,11 @@
 		"slider":"slider",
 		"toolbar":"toolbar",
 		"items":"items",
-		"footer":"footer"
-		
+		"footer":"footer",
+		"modal-item":"modal-item",
+		"modal-city":"modal-city",
+		"order-recom":"order-recom",
+		"order-list":"order-list"
 	},
 	"page":{
 		"index":"index",

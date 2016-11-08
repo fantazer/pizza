@@ -2,6 +2,7 @@
 .header 
 	padding 20px
 	flex(between)
+	position relative
 //.header__logo
 .header-wraper
 	z-index 2000
@@ -55,8 +56,8 @@
 		font-size 18px
 		margin-left -7px
 .header__basket
-	margin-left 15px
 	@extend .btn--dark
+	margin-left 15px
 	padding 10px 30px
 .nav 
 	f()
@@ -116,4 +117,87 @@
 	font-weight 300
 	flex(mid)
 	cp()
+
+.basket-cond__close
+	icon-x(12px, dark, 1px)
+	round()
+	flex(mid)
+	border 1px solid dark
+	size 20 20
+	position absolute!important
+	right 20px	
+	top 25px
+	margin-top -10px
+	cp()
+.basket-cond
+	position absolute
+	top 85px
+	width 350px
+	background white 
+	z-index 2100
+	right 30px
+	br(5px)
+	bsh()
+	display none
+.basket-cond__cont
+	position relative
+.basket-cond__title
+	color white
+	background red
+	display inline-block 
+	padding 5px 20px
+	width 240px
+	margin-top 10px
+	up()
+	font-family Myriad  Pro
+.basket-cond__wrap
+	margin-left 20px
+	margin-top 20px
+	height calc(100vh - 240px)
+	overflow overlay
+.basket-cond__el
+	flex(between)
+	padding 3px 0
+	
+.basket-cond__img
+	width 60px
+	margin-right 15px
+	margin-left 30px
+.basket-cond__info
+	flex(between)
+	color black
+	width 230px
+	border-bottom 2px solid red
+	padding-bottom 5px
+.basket-cond__info-title
+	text-transform initial
+	font-size 18px
+	font-weight 700 
+.basket-cond__numb
+	text-transform initial
+	font-size 18px
+	font-weight 700 
+	padding 3px 8px
+	border 1px solid red
+.basket-cond__cost
+	font-weight 700
+	font-size 20px
+	font-family Core Mellow Compressed
+	padding-right 10px
+	.rub
+		font-size 12px
+.basket-cond__footer
+	flex(around)
+	margin 20px 0
+.basket-cond__get
+	@extend .btn--dark
+	margin-left 90px
+	font-size 18px
+.basket-cond__total 
+	font-family Core Mellow Compressed
+	font-size 24px
+	.rub
+		font-family 'RUB'!important
+		font-size 14px
+//.rub
 //!block header end
