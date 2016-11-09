@@ -87,7 +87,7 @@ $(document).ready(function(){
 			}); 
 	})
 
-	$('.header__contact-numb').click(function(){
+	$('.nav__town').click(function(){
 			$('.modal-city').bPopup({
 				closeClass:'modal-close',
 					position:['auto','auto'], // position center
@@ -95,7 +95,7 @@ $(document).ready(function(){
 			}); 
 	})
 
-	$('.header__logo').click(function(){
+	$('.nav__menu-enter').click(function(){
 			$('.modal-auth').bPopup({
 				closeClass:'modal-close',
 					position:['auto','auto'], // position center

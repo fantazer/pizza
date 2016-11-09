@@ -95,8 +95,7 @@ gulp.task('screenshot', function() {
         windowSize:{
           width: 1920,
           height: 1024
-        },
-        userAgent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'
+        }
       }
     ));
 })
