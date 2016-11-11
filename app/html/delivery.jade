@@ -4,16 +4,11 @@ include ../module/**/*.jade
 +header()
 .section-wraper.section-wraper--page
 	.main-cont
-		.section-info
-			.section-toolbar
-				+toolbar()
-			.section-content
-				//her text for cabinet status
+		+delivery()
 +footer()
 +modal-item()
 +modal-city()
 +modal-auth()
-
-
-include ./block_html/_script.jade
+	
 include block_html/widget.html
+include ./block_html/_script.jade

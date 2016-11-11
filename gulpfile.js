@@ -274,7 +274,6 @@ gulp.task('make', function () {
    
   var assets = useref.assets();
   gulp.src('app/js/*.js')
-  .pipe(uglify())
   .pipe(gulp.dest('dist/js/'));
    gulp.src('app/css/style.css')
   .pipe(combineMq({

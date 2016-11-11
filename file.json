@@ -8,7 +8,8 @@
 		"modal-item":"modal-item",
 		"modal-city":"modal-city",
 		"order-recom":"order-recom",
-		"order-list":"order-list"
+		"order-list":"order-list",
+		"delivery":"delivery"
 	},
 	"page":{
 		"index":"index",

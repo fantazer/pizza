@@ -6,171 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
 		<title>Document</title>
-		<link rel="stylesheet" href="css/vendor.css">
+		<!--build:css css/vendor.css-->
+		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css" />
+		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+		<!--endbuild-->
 		<link rel="stylesheet" href="css/style_stock.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<script>
-			window.jStoreConfig = {
-				restaurant: "d8c14a95-f2b8-11e5-80c8-d8d385655247",
-				urls:
-				{
-					documentRoot: "/",
-					siteAddress: "http://rok.jqdigital.ru"
-				},
-				loc:
-				{
-					energy_sum: "Состав",
-					Nutritional_value: "Состав",
-					Total: "Итого"
-				},
-				templates: [
-				{
-					type: "recommendationBlock#top_recommendations",
-					class: "test",
-					properties:
-					{
-						sliderUse: !0,
-						visible: ["cart"],
-						sliderConfig:
-						{
-							infinite: !0,
-							variableWidth: !0,
-							autoplay: !0,
-							autoplaySpeed: 4e3,
-							prevArrow: '<span class="lsp-slider-prev"><</span>',
-							nextArrow: '<span class="lsp-slider-next">></span>',
-							slidesToShow: 4,
-							slidesToScroll: 1
-						}
-					}
-				},
-				{
-					type: "catalogItem",
-					class: "items-el"
-				},
-				{
-					type: "lastPurchases#top_lastPurchases",
-					class: "test",
-					properties:
-					{
-						sliderUse: !0,
-						showLastPurchases: !0,
-						sliderConfig:
-						{
-							infinite: !0,
-							variableWidth: !0,
-							autoplay: !0,
-							autoplaySpeed: 4e3,
-							prevArrow: '<span class="lsp-slider-prev"><</span>',
-							nextArrow: '<span class="lsp-slider-next">></span>',
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-				},
-				{
-					type: "itemsFilter#Napitki",
-					properties:
-					{
-						categories: ["064ebc61-6398-40f5-a89a-e8fc16eb9b4d"],
-						sliderUse: !0,
-						sliderConfig:
-						{
-							infinite: !0,
-							variableWidth: !0,
-							autoplay: !0,
-							autoplaySpeed: 4e3,
-							prevArrow: '<span class="lsp-slider-prev"><</span>',
-							nextArrow: '<span class="lsp-slider-next">></span>',
-							slidesToShow: 6,
-							slidesToScroll: 1
-						}
-					}
-				},
-				{
-					type: "itemsFilter#sushi",
-					properties:
-					{
-						categories: ["37a554e2-7dd3-4da4-b578-dcdc8933defd"],
-						sliderUse: !0,
-						sliderConfig:
-						{
-							infinite: !0,
-							variableWidth: !0,
-							autoplay: !0,
-							autoplaySpeed: 4e3,
-							prevArrow: '<span class="lsp-slider-prev"><</span>',
-							nextArrow: '<span class="lsp-slider-next">></span>',
-							slidesToShow: 6,
-							slidesToScroll: 1
-						}
-					}
-				},
-				{
-					type: "itemsFilter#buynow",
-					properties:
-					{
-						categories: ["a0fee26d-b934-4497-973b-0ab44f4d169b"],
-						sliderUse: !0,
-						sliderConfig:
-						{
-							infinite: !0,
-							variableWidth: !0,
-							autoplay: !0,
-							autoplaySpeed: 4e3,
-							prevArrow: '<span class="lsp-slider-prev"><</span>',
-							nextArrow: '<span class="lsp-slider-next">></span>',
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-				},
-				{
-					type: "userRegister",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				},
-				{
-					type: "userRememberPassword",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				},
-				{
-					type: "userPersonalEdit",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				},
-				{
-					type: "userAuth",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				},
-				{
-					type: "checkOrder",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				},
-				{
-					type: "orderSuccess",
-					properties:
-					{
-						showInPopUp: !0
-					}
-				}]
-			};
-
-		</script>
-		<script data-main="http://deliverywiget.iiko.ru/v2_0/app/config" src="http://deliverywiget.iiko.ru/v2_0/libs/require.js"></script>
 	</head>
 	<!-- mixin nameMixin()-->
 	<!-- - var args = Array.prototype.slice.call(arguments)-->
@@ -503,117 +348,397 @@
 			</div>
 		</div>
 		<!--block header end1-->
-		<div class="section-wraper">
-			<!--block slider-->
-			<div class="slider owl-carousel">
-				<a href="#" class="slider__el">
-					<img src="img/slider-1.jpeg" alt="" />
-				</a>
-				<a href="#" class="slider__el">
-					<img src="img/slider-2.jpeg" alt="" />
-				</a>
-			</div>
-			<!--block slider end-->
+		<div class="section-wraper section-wraper--page">
 			<div class="main-cont">
-				<div class="section-info">
-					<div class="section-toolbar">
-						<!--block toolbar-->
-						<div class="filter">
-							<div class="filter-wrap">
-								<div class="filter__toggle">Фильтр пицц
-									<span class="filter__toggle-close"></span>
-								</div>
-								<div class="filter__sub">
-									<div class="filter__sub-group">
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-1" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Вегетарианская</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-1" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Мясная</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-1" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Морепродукты</div>
-										</label>
-									</div>
-									<div class="filter__sub-group">
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-2" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Обычная</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-2" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Средней остроты</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-2" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Острая</div>
-										</label>
-									</div>
-									<div class="filter__sub-group">
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-3" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Акция</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-3" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Новинка</div>
-										</label>
-										<label class="style-label style-label--radio">
-											<input type="radio" name="group-3" class="sytle-input" />
-											<div class="sytle-input-element"></div>
-											<div class="sytle-input-text">Бесплатно</div>
-										</label>
-									</div>
-								</div>
-							</div>
+				<!--block delivery-->
+				<div class="coner-title">Условия доставки</div>
+				<div class="del-condition">
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-cart"></div>
 						</div>
-						<div class="left-menu">
-							<div class="left-menu-el left-menu-el--active">
-								<a href="#">Пицца</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Роллы</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Комбо-наборы</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Горячие блюда</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Салаты</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Супы</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Сендвичи и шаверма</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Десерты</a>
-							</div>
-							<div class="left-menu-el">
-								<a href="#">Напитки</a>
-							</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">Бесплатно</div>
+							<div class="del-condition__text">При покупке от 500 рублей.Вы оплачиваете только заказ. Доставку мы осуществляем бесплатно</div>
 						</div>
-						<!--block toolbar end-->
 					</div>
-					<div class="section-content">
-						<div id="lsp-block-content" class="lsp-block-content items-wraper"></div>
-						<!--+items()-->
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-clock"></div>
+						</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">Круглосуточно</div>
+							<div class="del-condition__text">Мы работаем 24 часа в сутки,7 дней в неделю, 365 дней в году.</div>
+						</div>
+					</div>
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-six"></div>
+						</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">Минут</div>
+							<div class="del-condition__text">В течение этого времени заказ будет доставлен.</div>
+						</div>
+					</div>
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-search"></div>
+						</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">www.rnr.ru</div>
+							<div class="del-condition__text">Более 4000 позиций в меню.</div>
+						</div>
+					</div>
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-phone"></div>
+						</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">mobile</div>
+							<div class="del-condition__text">iPhone, iPad, Android,Windows phone </div>
+						</div>
+					</div>
+					<div class="del-condition__el">
+						<div class="del-condition__icon">
+							<div class=" icon-call"></div>
+						</div>
+						<div class="del-condition__info">
+							<div class="del-condition__title">8(800)100-7-500</div>
+							<div class="del-condition__text">Оформить заказ по телефону </div>
+						</div>
 					</div>
 				</div>
+				<div class="coner-title">Минимальная сумма заказа</div>
+				<div class="del-cost">
+					<div class="del-cost__wraper">
+						<div class="del-info">
+							<div class="del-info__el">
+								<div class="del-info__el-info">
+									<div class="del-info__el-numb">500 </div>
+									<div class="del-info__el-text">в зоне доставки </div>
+									<div class="del-info__el-art art--green">A </div>
+								</div>
+								<div class="del-info__el-footer">
+									<span class="icon-clock"></span>
+									<div class="del-info__el-sub">С 06:00 - 00:00
+										<br> В пределах зоны доставки</div>
+								</div>
+							</div>
+							<div class="del-info__el">
+								<div class="del-info__el-info">
+									<div class="del-info__el-numb">2000 </div>
+									<div class="del-info__el-text">в зоне доставки </div>
+									<div class="del-info__el-art art--yellow">E</div>
+								</div>
+								<div class="del-info__el-footer">
+									<span class="icon-clock"></span>
+									<div class="del-info__el-sub">С 06:00 - 00:00
+										<br> В пределах зоны доставки</div>
+								</div>
+							</div>
+						</div>
+						<div class="del-attantion">
+							<div class="del-attantion__title">
+								<span class="icon-attantion"></span>
+								<span> Внимание:</span>
+							</div>
+							<div class="del-attantion__text"> Доставка осуществляется в городах: Набережные Челны, Елабуга, Нижнекамск, Алметьевск, Казань Стоимость доставки корректируется, согласно сумме заказа и зонам доставки. Указано на карте ниже. </div>
+						</div>
+					</div>
+				</div>
+				<div class="coner-title">Зоны доставки</div>
+				<div class="delivery-map"></div>
+				<div class="delivery-zone">
+					<div class="delivery-zone__el">
+						<div class="delivery-zone__wrap">
+							<div class="delivery-zone__title">
+								<div class="delivery-zone__art art--green">A </div>
+								<div class="delivery-zone__title-text">Зона доставки</div>
+							</div>
+							<div class="delivery-zone__info">
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ до 499 руб. -90 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 500 руб - бесплатно
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Время доставки: в течение 60 минут</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-zone__el">
+						<div class="delivery-zone__wrap">
+							<div class="delivery-zone__title">
+								<div class="delivery-zone__art art--red">B </div>
+								<div class="delivery-zone__title-text">Зона доставки</div>
+							</div>
+							<div class="delivery-zone__info">
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ до 499 руб. - 120 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 500-599 руб. - 30 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 600 руб. - бесплатно
+										<br> В пределах зоны доставки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-zone__el">
+						<div class="delivery-zone__wrap">
+							<div class="delivery-zone__title">
+								<div class="delivery-zone__art art--blue">С </div>
+								<div class="delivery-zone__title-text">Зона доставки</div>
+							</div>
+							<div class="delivery-zone__info">
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ до 499 руб. - 150 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 500-799 руб. - 60 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 800 руб. - бесплатно
+										<br> В пределах зоны доставки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-zone__el">
+						<div class="delivery-zone__wrap">
+							<div class="delivery-zone__title">
+								<div class="delivery-zone__art art--sky">D </div>
+								<div class="delivery-zone__title-text">Зона доставки</div>
+							</div>
+							<div class="delivery-zone__info">
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ до 499 руб. - 180 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 500-1499 руб. - 90 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 1500 руб. - бесплатно
+										<br> В пределах зоны доставки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="delivery-zone__el">
+						<div class="delivery-zone__wrap">
+							<div class="delivery-zone__title">
+								<div class="delivery-zone__art art--yellow">E</div>
+								<div class="delivery-zone__title-text">Зона доставки</div>
+							</div>
+							<div class="delivery-zone__info">
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ до 499 руб. - 250 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 500-1999 руб. - 160 руб.
+										<br> В пределах зоны доставки</div>
+								</div>
+								<div class="delivery-zone__info-el">
+									<div class="icon-clock"></div>
+									<div class="delivery-zone__info-text">Заказ от 2000 руб. - бесплатно
+										<br> В пределах зоны доставкивки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coner-title">Типы заказов</div>
+				<div class="del-section">
+					<div class="del-section__wraper">
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-rocket"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Экспресс-доставка</div>
+								<div class="del-section__text">Сделайте экспресс-заказ и получите его в течение 30 минут в городах: Набережные Челны, Нижнекамск, Елабуга</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-bag"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Забрать из ресторана</div>
+								<div class="del-section__text">Получайте заказ со скидкой 10% в выбранном ресторане в удобное для вас времялю, 365 дней в году.</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-car"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Доставка</div>
+								<div class="del-section__text">Сделайте заказ и получите его в течение 60 мин. по указанному вами адресу. </div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-present"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Подарить заказ</div>
+								<div class="del-section__text">Оформляйте заказы в качестве подарка своим родным или близким, инкогнито или открыто заявив о себе.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coner-title"> Информация</div>
+				<div class="del-section">
+					<div class="del-section__wraper del-section__wraper-thrd">
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-call"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Звонок оператора</div>
+								<div class="del-section__text">Сделайте экспресс-заказ и получите его в течение 30 минут в городах: Набережные Челны, Нижнекамск, Елабуга</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-message"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">PUSH уведомление</div>
+								<div class="del-section__text">Получайте заказ со скидкой 10% в выбранном ресторане в удобное для вас времялю, 365 дней в году.</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-mail"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">SMS оповещение</div>
+								<div class="del-section__text">При выборе SMS-оповещения вы даёте свое согласие компании «» на получение оповещений об изменениях статуса заказа (прием, формирование, отправка, доставка заказа), информирование о внутренних акциях и новостях (специальные предложения, скидки
+									и иные рекламно-информационные материалы) сети ресторанов «» с помощью SMS. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coner-title">Способы оплаты товара</div>
+				<div class="del-section">
+					<div class="del-section__wraper del-section__wraper-thrd">
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-wallet"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Наличными</div>
+								<div class="del-section__text">Оплата наличными курьеру или в ресторане при получении заказа.</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-card"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Банковской картой (интернет)</div>
+								<div class="del-section__text">При оформлении заказа на сайте (сервис доступен для карт: Visa, MasterCard)</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-card"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Банковской картой (при оплате заказа курьеру)</div>
+								<div class="del-section__text">Оплата заказа банковской картой при получении. Принимаются банковские карты MasterCard (кроме Maestro) и Visa (кроме Visa Electron) </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coner-title"> Почему наши рестораны?</div>
+				<div class="del-section">
+					<div class="del-section__wraper">
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-sphere"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Легко заказать</div>
+								<div class="del-section__text">Сделайте экспресс-заказ и получите его в течение 30 минут в городах: Набережные Челны,Нижнекамск, Елабуга</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-rocket"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Быстро и аккуратно</div>
+								<div class="del-section__text">Получайте заказ со скидкой 10% в выбранном ресторане в удобное для вас времялю, 365 дней в году.</div>
+							</div>
+						</div>
+						<div class="del-section__el">
+							<div class="del-section__img">
+								<div class="del-section__icon">
+									<div class="icon icon-star"></div>
+								</div>
+							</div>
+							<div class="del-section__info">
+								<div class="del-section__title">Гарантированное качество</div>
+								<div class="del-section__text">Наши товары проходят специально разработанный процесс контроля качества. Получайте только лучшее. </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--block delivery end-->
 			</div>
 		</div>
 		<!--block footer-->
@@ -804,7 +929,13 @@
 			<%= jStoreApp.t('Contact_phone')%>
 		</script>
 
-		<script src="js/combined.js"></script>
+		<!--build:js js/combined.js-->
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+		<script src="js/jquery.smoothscroll.js"></script>
+		<!-- endbuild-->
 		<script src="js/script.js"></script>
 	</body>
 
