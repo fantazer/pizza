@@ -9,15 +9,16 @@ mixin header()
 				.header__contact
 					.header__contact-text звонок бесплатный
 					.header__contact-numb 8 (800) 100-7-500
-				.social
-					a(href="#").social__el
-						i.icon.icon-youtube-alt
-					a(href="#").social__el
-						i.icon.icon-main
-					a(href="#").social__el
-						i.icon.icon-facebook
-					a(href="#").social__el
-						i.icon.icon-instagrem
+				.social-wraper
+					.lang_change
+						spaan.lang_change-el RU
+						span /
+						spaan.lang_change-el ENG
+					.social
+						a(href="#").social__el
+							object(type="image/svg+xml" data="img/vk.svg" ).social__icon
+						a(href="#").social__el
+							object(type="image/svg+xml" data="img/instagram.svg" ).social__icon
 				.header__basket-wrap
 					.header__cost 1200
 						span.rub c

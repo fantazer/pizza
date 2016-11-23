@@ -4,6 +4,12 @@ $(document).ready(function(){
 	//	//code
 	//}
 
+
+	//
+	/*$('.section-toolbar').hcSticky({
+	    top: 250,
+	    bottomEnd: 400,
+	});*/
 	//message for old IE
 	function isIE () {
 	  var myNav = navigator.userAgent.toLowerCase();
