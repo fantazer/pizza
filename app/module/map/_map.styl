@@ -1,0 +1,103 @@
+//! block map
+.map-wraper
+	margin-top 50px
+//.section-wraper--map
+//.map-wraper
+//.title-row--right
+.map-el
+	flex(between)
+	align-items flex-start
+.map-media
+	width 57%
+	position relative
+.map-media__btn
+	position absolute
+	z-index 200
+	font-size 22px
+	padding 10px 15px
+	color white
+	background green
+	font-family MyriadProCondensed
+	up()
+	cp()
+//.map-slider
+.map-slider__el
+	width 100%
+	height 400px
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+.map-content
+	width 40%
+	margin-left 3%
+.map-title
+	+below(1200px)
+		font-size 22px
+	font-size 24px
+	font-family  Myriad  Pro
+	font-weight 400
+.map-title__sub
+	+below(1200px)
+		font-size 22px
+	font-size 24px
+	font-family  Myriad  Pro
+	font-weight 400
+	margin-bottom 40px 
+.map-info__row
+	f()
+	align-items center
+	margin-bottom 10px
+.map-icon
+	flex(mid)
+	font-size 26px
+	margin-right 20px
+.map-info__val
+	+below(1200px)
+		flex(between)
+	font-family MyriadProCondensed
+	font-size 22px
+	flex(mid)
+	fw()
+	span
+		+below(1200px)
+			width 45%
+			font-size 16px
+			text-align left
+		width 33%
+.map-get
+	flex(between)
+	fw()
+	margin-top 20px
+.map-get__adv
+	+below(1200px)
+		width 100%
+		margin-bottom 20px
+	flex(between)
+	fw()
+	width 48%
+	padding 20px
+	border 1px solid black
+	.map-info__row
+		width 50%
+	.map-info__val
+		font-size 18px
+.map-info__row--card
+	width 100%!important
+.map-get__btn
+	+below(1200px)
+		width 100%
+		flex(mid)
+	f()
+	fl()
+	width 48%
+.map-get__btn--dark
+	@extend .btn--dark
+	width 80%
+	margin-bottom 20px
+	text-align center
+.map-get__btn--green
+	@extend .btn--dark
+	width 80%
+	background green 
+	text-align center
+//!block map end

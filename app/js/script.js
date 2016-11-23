@@ -31,6 +31,16 @@ $(document).ready(function(){
 	 }
 	);
 	
+	$(".map-slider").owlCarousel({
+	 items : 1,
+	 autoplay : true,
+	 nav:true,
+	 dots:false,
+	 loop:true,
+	 navText:['<span class="arrow-el arrow-left"></span>','<span class="arrow-el arrow-right"></span>']
+	 }
+	);
+
 	/* ###### For SlideToggle Elements  ######*/
 	var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){

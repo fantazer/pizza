@@ -9,12 +9,14 @@
 		"modal-city":"modal-city",
 		"order-recom":"order-recom",
 		"order-list":"order-list",
-		"delivery":"delivery"
+		"delivery":"delivery",
+		"map":"map"
 	},
 	"page":{
 		"index":"index",
 		"order":"order",
 		"cabinet":"cabinet",
-		"status":"status"
+		"status":"status",
+		"map":"map"
 	}
 }
