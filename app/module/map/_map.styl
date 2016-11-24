@@ -7,9 +7,11 @@
 .map-el
 	flex(between)
 	align-items flex-start
+	margin-bottom 30px
 .map-media
 	width 57%
 	position relative
+	height 400px
 .map-media__btn
 	position absolute
 	z-index 200
@@ -100,4 +102,13 @@
 	width 80%
 	background green 
 	text-align center
+	&:hover
+		background darken(green,10)
+.map-interactive
+	width 100%
+	height 100%
+	background grey 
+	position absolute
+	top 0
+	left 0
 //!block map end

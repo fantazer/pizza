@@ -1,4 +1,22 @@
 $(document).ready(function(){
+
+	$(".map-slider").owlCarousel({
+	 items : 1,
+	 autoplay : false,
+	 nav:true,
+	 dots:false,
+	 loop:true,
+	 navText:['<span class="arrow-el arrow-left"></span>','<span class="arrow-el arrow-right"></span>']
+	 }
+	);
+
+	//toggle map
+	$('.map-media__btn').click(function(){
+		$(this).closest('.map-media').find('.map-slider').hide();
+		$(this).hide();
+	})
+
+
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
 	//	//code
@@ -31,15 +49,7 @@ $(document).ready(function(){
 	 }
 	);
 	
-	$(".map-slider").owlCarousel({
-	 items : 1,
-	 autoplay : true,
-	 nav:true,
-	 dots:false,
-	 loop:true,
-	 navText:['<span class="arrow-el arrow-left"></span>','<span class="arrow-el arrow-right"></span>']
-	 }
-	);
+
 
 	/* ###### For SlideToggle Elements  ######*/
 	var hideToggle = function(targetClick,toggleEl) {

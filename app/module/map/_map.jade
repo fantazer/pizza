@@ -2,58 +2,61 @@ mixin map()
 	.map-wraper
 		.title-row--right
 			.coner-title.coner-title--red Наши рестораны  в городе  набережные челны
-		.map-el
-			.map-media
-				.map-media__btn на карте
-				.map-slider.owl-carousel
-					.map-slider__el(style="background-image:url(img/rest-item-1.jpg)")
-					.map-slider__el(style="background-image:url(img/rest-item-2.jpg)")
-			.map-content
-				a(href="#")
-					.map-title Новый город, 32 к-с, ТД  “Экватор”
-					.map-title__sub ТЦ «Меридиан»
-
-				.map-info__row
-					.map-icon
-						.icon.icon-call
-					.map-info__val 59-39-39
-				.map-info__row
-					.map-icon
-						.icon.icon-clock
-					.map-info__val
-						span ПН с 12:00 до 23:00
-						span ВТ с 12:00 до 23:00
-						span СР с 12:00 до 23:00
-						span ПН с 12:00 до 23:00
-						span ВТ с 12:00 до 23:00
-						span СР с 12:00 до 23:00
-
-
-				.map-info__row
-					.map-icon
-						.icon.icon-dinner
-					.map-info__val Японская, европейская кухня
+		- for (var i = 0; i < 5; i++)
+			.map-el
+				.map-media
+					.map-media__btn на карте
+					.map-slider.owl-carousel
+						.map-slider__el(style="background-image:url(img/rest-item-1.jpg)")
+						.map-slider__el(style="background-image:url(img/rest-item-2.jpg)")
+					.map-interactive
 						
-				.map-get
-					.map-get__adv
-						.map-info__row
-							.map-icon
-								.icon.icon-wifi
-							.map-info__val wi-fi
-						.map-info__row
-							.map-icon
-								.icon.icon-car
-							.map-info__val парковка
-						.map-info__row.map-info__row--card
-							.map-icon
-								.icon.icon-card
-							.map-info__val принимаем оплату картами
-						.map-info__row
-							.map-icon
-								.icon.icon-hookah-dark
-							.map-info__val кальян
-					.map-get__btn
-						a(href="#").map-get__btn--dark Виртуальный тур
-						a(href="#").map-get__btn--green Заказать блюда
+				.map-content
+					a(href="#")
+						.map-title Новый город, 32 к-с, ТД  “Экватор”
+						.map-title__sub ТЦ «Меридиан»
+
+					.map-info__row
+						.map-icon
+							.icon.icon-call
+						.map-info__val 59-39-39
+					.map-info__row
+						.map-icon
+							.icon.icon-clock
+						.map-info__val
+							span ПН с 12:00 до 23:00
+							span ВТ с 12:00 до 23:00
+							span СР с 12:00 до 23:00
+							span ПН с 12:00 до 23:00
+							span ВТ с 12:00 до 23:00
+							span СР с 12:00 до 23:00
+
+
+					.map-info__row
+						.map-icon
+							.icon.icon-dinner
+						.map-info__val Японская, европейская кухня
+							
+					.map-get
+						.map-get__adv
+							.map-info__row
+								.map-icon
+									.icon.icon-wifi
+								.map-info__val wi-fi
+							.map-info__row
+								.map-icon
+									.icon.icon-car
+								.map-info__val парковка
+							.map-info__row.map-info__row--card
+								.map-icon
+									.icon.icon-card
+								.map-info__val принимаем оплату картами
+							.map-info__row
+								.map-icon
+									.icon.icon-hookah-dark
+								.map-info__val кальян
+						.map-get__btn
+							a(href="#").map-get__btn--dark Виртуальный тур
+							a(href="#").map-get__btn--green Заказать блюда
 	//block map
 	//block map end
