@@ -1,0 +1,78 @@
+mixin inside()
+	//block inside
+	.inside-wraper
+		.title-row--right
+			.coner-title.coner-title--red Наши рестораны  в городе  набережные челны
+	
+		.inside-el
+			.inside-media
+				.inside-interactive
+				.inside-control
+					a(href="#").inside-control__el
+						span.icon.icon-arrow-top
+						| Все рестораны
+					a(href="#").inside-control__el Забронировать стол
+					a(href="#").inside-control__el Заказать блюда
+					
+			.inside-content
+				a(href="#")
+					.inside-title Новый город, 32 к-с, ТД  “Экватор”
+					.inside-title__sub ТЦ «Меридиан»
+
+				.inside-info__row
+					.inside-icon
+						.icon.icon-call
+					.inside-info__val 59-39-39
+				.inside-info__row
+					.inside-icon
+						.icon.icon-clock
+					.inside-info__val
+						span ПН с 12:00 до 23:00
+						span ВТ с 12:00 до 23:00
+						span СР с 12:00 до 23:00
+						span ПН с 12:00 до 23:00
+						span ВТ с 12:00 до 23:00
+						span СР с 12:00 до 23:00
+				.inside-info__row
+					.inside-icon
+						.icon.icon-dinner
+					.inside-info__val Японская, европейская кухня
+						
+				.inside-get
+					.inside-get__adv
+						.inside-info__row
+							.inside-icon
+								.icon.icon-wifi
+							.inside-info__val wi-fi
+						.inside-info__row
+							.inside-icon
+								.icon.icon-car
+							.inside-info__val парковка
+						.inside-info__row.inside-info__row--card
+							.inside-icon
+								.icon.icon-card
+							.inside-info__val принимаем оплату картами
+						.inside-info__row
+							.inside-icon
+								.icon.icon-hookah-dark
+							.inside-info__val кальян
+	
+	.persons
+		.title-row--right
+			.coner-title.coner-title--red Персонал ресторана:
+		.persons__wrap
+			- for (var i = 0; i < 4; i++)
+				.persons__el
+					.persons__img(style="background-image:url('img/man.jpg')")
+					.persons__name 
+						span Иван
+						span  Семненович
+			a(href="#").persons__el.persons__el--add 
+				.persons__img
+					span +
+				.persons__name 
+					span Хочу здесь 
+					span  работать
+				
+
+	//block inside end

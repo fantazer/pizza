@@ -1,0 +1,16 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
++header()
+.section-wraper.section-wraper--inside
+	+inside-baner()
+	.main-cont
+		+inside()
++footer()
++modal-item()
++modal-city()
++modal-auth()
+
+include block_html/widget.html
+include ./block_html/_script.jade
+

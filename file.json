@@ -10,13 +10,16 @@
 		"order-recom":"order-recom",
 		"order-list":"order-list",
 		"delivery":"delivery",
-		"map":"map"
+		"map":"map",
+		"inside":"inside",
+		"inside-baner":"inside-baner"
 	},
 	"page":{
 		"index":"index",
 		"order":"order",
 		"cabinet":"cabinet",
 		"status":"status",
-		"map":"map"
+		"map":"map",
+		"inside":"inside"
 	}
 }
